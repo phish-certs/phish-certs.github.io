@@ -1,7 +1,3 @@
-# Certificate classification features
-
-Features extracted from certificates
-
 ## Certificate features
 
 | #     | Type  | Description                                                              |
@@ -53,17 +49,18 @@ Features extracted from certificates
 | 57-58 | bool  | Existence and critical status of issuer alternative name extension       |
 
 ## Domain features
+
 | #       | Type  | Description                                                                                                  |
 |---------|-------|--------------------------------------------------------------------------------------------------------------|
-| 59      | int   | domain length                                                                                                |
+| 59      | int   | Domain length                                                                                                |
 | 60      | bool  | If the domain has seven or more labels                                                                       |
 | 61      | bool  | If the domain is under a suspicious TLD                                                                      |
 | 62      | bool  | If the domain contains a suspicious keyword                                                                  |
 | 63      | int   | Shannon entropy of the domain                                                                                |
-| 64      | int   | Number of dashes (`-') in domain                                                                             |
-| 65      | int   | Number of tokens in domain (i.e., split domain on periods ('.') and dashes ('-'))                            |
-| 66      | int   | Number of parts of the domain (i.e., split domain on period ('.'))                                           |
-| 67      | int   | Number of parts of the domain (i.e., split domain on period ('.'))                                           |
+| 64      | int   | Number of dashes (-) in domain                                                                               |
+| 65      | int   | Number of tokens in domain (i.e., split domain on periods (.) and dashes (-))                                |
+| 66      | int   | Number of parts of the domain (i.e., split domain on period (.))                                           |
+| 67      | int   | Number of parts of the domain (i.e., split domain on period (.))                                           |
 | 68      | int   | Number of labels of the subdomain part of the domain                                                         |
 | 69      | bool  | If one of the tokens in the domain is a TLD                                                                  |
 | 70      | bool  | If the domain contains "https"                                                                               |
@@ -82,7 +79,7 @@ Features extracted from certificates
 | 83      | int   | Alphabet size (Number of unique letters in domain)                                                           |
 | 84      | float | Fraction of the domain that is an underscore                                                                 |
 | 85      | int   | The Tranco rank of the domain                                                                                |
-| 86      | bool  | If the domain is a wildcard domain (i.e., starts with a start ('*'))                                         |
-| 87-93   | int   | \{ stdev, mean, min, max, median, bottom quartile, top quartile\} of the count of 1-grams in the domain \}   |
-| 84-100  | int   | \{ stdev, mean, min, max, median, bottom quartile, top quartile\} of the count of 2-grams in the domain \}   |
-| 101-107 | int   | \{ stdev, mean, min, max, median, bottom quartile, top quartile\} of the count of 3-grams in the domain \}   |
+| 86      | bool  | If the domain is a wildcard domain (i.e., starts with a start (*))                                           |
+| 87-93   | int   | { stdev, mean, min, max, median, bottom quartile, top quartile\} of the count of 1-grams in the domain }     |
+| 84-100  | int   | { stdev, mean, min, max, median, bottom quartile, top quartile\} of the count of 2-grams in the domain }     |
+| 101-107 | int   | { stdev, mean, min, max, median, bottom quartile, top quartile\} of the count of 3-grams in the domain }     |
